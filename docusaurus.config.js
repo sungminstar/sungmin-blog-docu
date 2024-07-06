@@ -10,7 +10,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config = {
   title: "SungminStar",
   tagline: "SungminStar",
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://www.sungminstar.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
