@@ -14,7 +14,7 @@ const config = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "https://github.com/sungminstar.png",
+  favicon: "img/sungminstar.png",
   organizationName: "sungminstar",
   projectName: "SungminStarBlog",
   i18n: {
