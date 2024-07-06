@@ -1,7 +1,7 @@
 ---
 slug: "두 정수 사이의 합"
 title: Lv1. 두 정수 사이의 합
-authors: sungminstar
+authors: [sungmin]
 tags: [javascript, codingtest]
 ---
 

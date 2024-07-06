@@ -1,7 +1,7 @@
 ---
 slug: "없는 숫자 더하기"
 title: Lv1. 없는 숫자 더하기
-authors: sungminstar
+authors: [sungmin]
 tags: [javascript, codingtest]
 ---
 

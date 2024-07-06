@@ -1,7 +1,7 @@
 ---
 slug: "음양 더하기"
 title: Lv1. 음양 더하기
-authors: sungminstar
+authors: [sungmin]
 tags: [javascript, codingtest]
 ---
 
