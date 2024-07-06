@@ -8,27 +8,15 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
-  favicon: "img/favicon.ico",
-
-  // Set the production url of your site here
+  title: "SungminStar",
+  tagline: "SungminStar",
   url: "https://your-docusaurus-site.example.com",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
-
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  favicon: "https://github.com/sungminstar.png",
+  organizationName: "sungmin",
+  projectName: "SungminStarBlog",
   i18n: {
     defaultLocale: "ko",
     locales: ["ko"],
@@ -39,19 +27,15 @@ const config = {
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: "./sidebars.js",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-        },
+        docs: false,
         blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          routeBasePath: "/",
+          blogSidebarTitle: "Posts",
+          blogSidebarCount: "ALL",
+          blogTitle: "sungmins star blog",
+          postsPerPage: 5,
+          readingTime: ({ content, frontMatter, defaultReadingTime }) =>
+            defaultReadingTime({ content, options: { wordsPerMinute: 300 } }),
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -63,34 +47,33 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // image: "img/docusaurus-social-card.jpg",
       navbar: {
         title: "Sungmin Star",
-        // style: "dark",
         logo: {
           alt: "Sungmin Star Logo",
           src: "img/star-logo.svg",
         },
         items: [
           {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
+            to: "/algorithm",
             position: "left",
             label: "Algorithm",
           },
           {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
+            to: "/til",
             position: "left",
-            label: "Error",
+            label: "TIL",
           },
           {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
+            to: "Project",
             position: "left",
             label: "Project",
           },
-          // { to: "/blog", label: "Blog", position: "left" },
+          {
+            href: "http://easy-utensil-418.notion.site",
+            label: "Info",
+            position: "right",
+          },
           {
             href: "https://github.com/sungminstar",
             label: "GitHub",
@@ -100,52 +83,11 @@ const config = {
       },
       footer: {
         style: "dark",
-        // links: [
-        //   {
-        //     title: "Docs",
-        //     items: [
-        //       {
-        //         label: "Tutorial",
-        //         to: "/docs/intro",
-        //       },
-        //     ],
-        //   },
-        //   {
-        //     title: "Community",
-        //     items: [
-        //       {
-        //         label: "Stack Overflow",
-        //         href: "https://stackoverflow.com/questions/tagged/docusaurus",
-        //       },
-        //       {
-        //         label: "Discord",
-        //         href: "https://discordapp.com/invite/docusaurus",
-        //       },
-        //       {
-        //         label: "Twitter",
-        //         href: "https://twitter.com/docusaurus",
-        //       },
-        //     ],
-        //   },
-        //   {
-        //     title: "More",
-        //     items: [
-        //       {
-        //         label: "Blog",
-        //         to: "/blog",
-        //       },
-        //       {
-        //         label: "GitHub",
-        //         href: "https://github.com/facebook/docusaurus",
-        //       },
-        //     ],
-        //   },
-        // ],
         copyright: `Copyright © ${new Date().getFullYear()} Sungmin Lim`,
       },
       // prism: {
-      //   // theme: prismThemes.github,
-      //   // darkTheme: prismThemes.dracula,
+      //   theme: prismThemes.github,
+      //   darkTheme: prismThemes.dracula,
       // },
     }),
 };
