@@ -10,11 +10,11 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config = {
   title: "SungminStar",
   tagline: "SungminStar",
-  url: "https://www.sungminstar.com",
+  url: "https://sungminstar.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/sungminstar.png",
+  favicon: "img/favicon.ico",
   organizationName: "sungminstar",
   projectName: "SungminStarBlog",
   i18n: {
