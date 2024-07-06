@@ -15,7 +15,7 @@ const config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "https://github.com/sungminstar.png",
-  organizationName: "sungmin",
+  organizationName: "sungminstar",
   projectName: "SungminStarBlog",
   i18n: {
     defaultLocale: "ko",
