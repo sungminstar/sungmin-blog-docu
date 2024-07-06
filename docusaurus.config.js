@@ -8,13 +8,13 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "SungminStar",
-  tagline: "SungminStar",
+  title: "SUNGMIN",
+  tagline: "STAR",
   url: "https://sungminstar.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "img/star-logo.svg",
   organizationName: "sungminstar",
   projectName: "SungminStarBlog",
   i18n: {
