@@ -54,21 +54,21 @@ const config = {
           src: "img/star-logo.svg",
         },
         items: [
-          {
-            to: "/algorithm",
-            position: "left",
-            label: "Algorithm",
-          },
-          {
-            to: "/til",
-            position: "left",
-            label: "TIL",
-          },
-          {
-            to: "Project",
-            position: "left",
-            label: "Project",
-          },
+          // {
+          //   to: "/algorithm",
+          //   position: "left",
+          //   label: "Algorithm",
+          // },
+          // {
+          //   to: "/til",
+          //   position: "left",
+          //   label: "TIL",
+          // },
+          // {
+          //   to: "/project",
+          //   position: "left",
+          //   label: "Project",
+          // },
           {
             href: "http://easy-utensil-418.notion.site",
             label: "Info",
